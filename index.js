@@ -14,4 +14,4 @@ app.get('/' , (req , res)=> {
         res.send("app runing")
 }) 
 
-app.listen(process.env.APP_PORT)
+app.listen(process.env.APP_PORT , ()=>{console.log('server is runing')})
