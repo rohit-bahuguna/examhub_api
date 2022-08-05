@@ -130,11 +130,11 @@
 -- 2022 , 'image url' , 1245325415);
 
 
--- INSERT INTO user_details (userid , gender , address , profilepic , pincode , contact , city, 
--- country, college , age , course  ,
---  gradyear , accountdate , lastlogin  )
+--  INSERT INTO user_details (userid , gender , address , profilepic , pincode , contact , city, 
+--  country, college , age , course  ,
+--   gradyear , accountdate , lastlogin  )
 --  VALUES ('01','male','Haldwani', 'image url' ,  263139, 1245325415 , 'Nainital' ,'india', 'DSB campus nainital', 24 , 'BVocAMA',
--- 2022 , '20-12-2021' , '2022-07-29 22:36:17');
+--  2022 , '20-12-2021' , '2022-07-29 22:36:17');
 
 
 
