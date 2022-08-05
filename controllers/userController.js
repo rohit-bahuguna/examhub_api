@@ -16,9 +16,6 @@ const getAllUser = async (req, res) => {
 };
 
 const getAuser = async (req, res) => {
-  const user = req.body.username;
-
-  //  console.log(user)
   try {
     const response = await db
       .promise()
@@ -34,7 +31,6 @@ const getAuser = async (req, res) => {
 const RemoveAuser = async (req, res) => {
   const user = req.body.username;
 
-  //  console.log(user)
   try {
     const response = await db
       .promise()
@@ -48,13 +44,8 @@ const RemoveAuser = async (req, res) => {
 };
 
 const addAuser = async (req, res) => {
-
-
-  //  console.log(user)
   try {
-    const response = await db
-      .promise()
-      .query(`
+    const response = await db.promise().query(`
       
       INSERT INTO users (
         userid ,
@@ -79,7 +70,7 @@ const addAuser = async (req, res) => {
       
       
       `);
-    console.log(response[0])
+    // console.log(response[0])
     res.status(200).json(response[0]);
   } catch (error) {
     console.log(error);
@@ -88,13 +79,8 @@ const addAuser = async (req, res) => {
 };
 
 const updateAuser = async (req, res) => {
-  
-
-  
   try {
-    const response = await db
-      .promise()
-      .query(`
+    const response = await db.promise().query(`
       
       UPDATE users SET 
       username = '${req.body.username}' ,
@@ -107,7 +93,7 @@ const updateAuser = async (req, res) => {
       
      
       `);
-    console.log(response[0])
+    //  console.log(response[0])
     res.status(200).json(response[0]);
   } catch (error) {
     console.log(error);
