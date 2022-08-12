@@ -6,7 +6,24 @@ const {
   getAllUser,
   updateAuser,
   addAuser,
+  logIn,
+  updatePassword,
+  searchUserDataWithId,
+  getUserById
 } = require("../controllers/userController");
+
+
+
+
+
+
+userRouter.post("/login", logIn);
+
+userRouter.post("/searchuser/:userId", searchUserDataWithId);
+
+userRouter.post("/finduser/", getUserById);
+
+userRouter.post("/updateuserpassword", updatePassword);
 
 userRouter.get("/alluser", getAllUser);
 
